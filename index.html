@@ -8,81 +8,95 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <!-- calculator container -->
-    <div class="container">
-      <!-- calculator screen -->
-      <div class="row">
-        <div class="calc-screen">
-          <span id="calc-result"></span>
+    <!-- phone container -->
+    <div class="phone-container">
+      <!-- calculator container -->
+      <div class="calc-container">
+        <!-- calculator screen -->
+        <div class="row">
+          <div class="calc-screen">
+            <span id="calc-result"></span>
+          </div>
+        </div>
+        <!-- first row in calculator -->
+        <div class="row">
+          <div class="col">
+            <button data-val="clear" class="btn-light">AC</button>
+          </div>
+          <div class="col">
+            <button data-val="minus" class="btn-light">+/-</button>
+          </div>
+          <div class="col">
+            <button data-val="%" class="btn-light">%</button>
+          </div>
+          <div class="col">
+            <button data-val="/" class="btn-yellow">÷</button>
+          </div>
+        </div>
+
+        <!-- second row in calculator -->
+        <div class="row">
+          <div class="col">
+            <button data-val="7">7</button>
+          </div>
+          <div class="col">
+            <button data-val="8">8</button>
+          </div>
+          <div class="col">
+            <button data-val="9">9</button>
+          </div>
+          <div class="col">
+            <button data-val="x" class="btn-yellow">x</button>
+          </div>
+        </div>
+
+        <!-- third row in calculator -->
+        <div class="row">
+          <div class="col">
+            <button data-val="4">4</button>
+          </div>
+          <div class="col">
+            <button data-val="5">5</button>
+          </div>
+          <div class="col">
+            <button data-val="6">6</button>
+          </div>
+          <div class="col">
+            <button data-val="-" class="btn-yellow">-</button>
+          </div>
+        </div>
+
+        <!-- forth row in calculator -->
+        <div class="row">
+          <div class="col">
+            <button data-val="1">1</button>
+          </div>
+          <div class="col">
+            <button data-val="2">2</button>
+          </div>
+          <div class="col">
+            <button data-val="3">3</button>
+          </div>
+          <div class="col">
+            <button data-val="+" class="btn-yellow">+</button>
+          </div>
+        </div>
+
+        <!-- fifth row in calculator -->
+        <div class="row">
+          <div class="col">
+            <button data-val="0">0</button>
+          </div>
+          <div class="col">
+            <button data-val="dot">.</button>
+          </div>
+          <div class="col">
+            <button data-val="equale" class="btn-yellow">=</button>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col">
-          <button data-val="clear" class="btn-light">AC</button>
-        </div>
-        <div class="col">
-          <button data-val="minus" class="btn-light">+/-</button>
-        </div>
-        <div class="col">
-          <button data-val="%" class="btn-light">%</button>
-        </div>
-        <div class="col">
-          <button data-val="/" class="btn-yellow">÷</button>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <button data-val="7">7</button>
-        </div>
-        <div class="col">
-          <button data-val="8">8</button>
-        </div>
-        <div class="col">
-          <button data-val="9">9</button>
-        </div>
-        <div class="col">
-          <button data-val="x" class="btn-yellow">x</button>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <button data-val="4">4</button>
-        </div>
-        <div class="col">
-          <button data-val="5">5</button>
-        </div>
-        <div class="col">
-          <button data-val="6">6</button>
-        </div>
-        <div class="col">
-          <button data-val="-" class="btn-yellow">-</button>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <button data-val="1">1</button>
-        </div>
-        <div class="col">
-          <button data-val="2">2</button>
-        </div>
-        <div class="col">
-          <button data-val="3">3</button>
-        </div>
-        <div class="col">
-          <button data-val="+" class="btn-yellow">+</button>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <button data-val="0">0</button>
-        </div>
-        <div class="col">
-          <button data-val="dot">.</button>
-        </div>
-        <div class="col">
-          <button data-val="equale" class="btn-yellow">=</button>
-        </div>
-      </div>
+      <!-- phone button -->
+      <div class="phone-btn"></div>
     </div>
     <script src="js/app.js"></script>
   </body>

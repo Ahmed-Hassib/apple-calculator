@@ -11,18 +11,41 @@
 html,
 body {
   position: relative;
-  background: rgba(0, 0, 0, 1);
 }
 
-/* container */
-.container {
-  padding: 1rem 0;
+/* phone conatiner */
+.phone-container {
+  padding: 4rem 1rem;
   margin: auto;
-  width: 300px;
+  width: 20rem;
+  height: 670px;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  border: 1px solid rgba(255, 255, 255, 1);
+  border-radius: 2rem;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+/* phone button */
+.phone-btn {
+  padding: 1rem;
+  width: 3rem;
+  height: 3rem;
+  background-color: rgba(60, 60, 60, 0.2);
+  position: fixed;
+  bottom: 10px;
+  left: 43%;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+/* calculator container */
+.calc-container {
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .row {
@@ -31,10 +54,14 @@ body {
   justify-content: space-around;
 }
 
+.row:first-child {
+  height: 120px;
+}
+
 .row .calc-screen {
   margin-top: 1rem;
-  padding-top: 1rem;
   width: 100%;
+  line-height: 5rem;
   color: rgba(255, 255, 255, 1);
   text-align: right;
 }
@@ -81,4 +108,9 @@ button.btn-yellow {
 button.btn-light {
   background-color: rgba(255, 255, 255, 0.8);
   color: rgba(0, 0, 0, 1);
+}
+
+button.active {
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(255, 195, 0, 1);
 }
