@@ -1,3 +1,7 @@
+/**
+ * create global variables
+ */
+
 // get the screen
 let screenResult = document.getElementById("calc-result");
 // get all calculator buttons
