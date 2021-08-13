@@ -28,6 +28,26 @@ body {
   background-color: rgba(0, 0, 0, 1);
 }
 
+/* speaker */
+.speaker,
+.camera {
+  padding: 1px;
+  width: 50px;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* camera */
+.camera {
+  width: 10px;
+  height: 10px;
+  left: 35%;
+  border-radius: 50%;
+}
+
 /* phone button */
 .phone-btn {
   padding: 1rem;
@@ -35,17 +55,40 @@ body {
   height: 3rem;
   background-color: rgba(60, 60, 60, 0.2);
   position: fixed;
-  bottom: 10px;
-  left: 43%;
+  bottom: -2%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border: 2px solid rgba(255, 255, 255, 0.1);
   border-radius: 50%;
 }
 
+/* power button */
+.power-btn,
+.upVol-btn,
+.dwVol-btn {
+  height: 3rem;
+  width: 0.5rem;
+  border-radius: 6px;
+  position: absolute;
+  top: 15%;
+  right: -1%;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+/* up & down volume button */
+.upVol-btn,
+.dwVol-btn {
+  left: -1%;
+}
+
+.dwVol-btn {
+  top: 23%;
+}
 /* calculator container */
 .calc-container {
   width: 100%;
   height: 100%;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .row {
@@ -64,6 +107,7 @@ body {
   line-height: 5rem;
   color: rgba(255, 255, 255, 1);
   text-align: right;
+  overflow: hidden;
 }
 
 #calc-result {
